@@ -104,7 +104,7 @@ class Main extends PluginBase implements Listener{
     }
 
     public function setNamedTag($player){
-        $player->setDisplayName(C::ITALIC. C::DARK_GRAY. "[". C::DARK_RED. "Lvl". C::WHITE. "" . $this->getLevel($player) . C::DARK_GRAY. "] ". C::WHITE . $player->getName());
+        $player->setDisplayName(C::ITALIC. C::DARK_GRAY. "[". C::DARK_RED. "Lvl.". C::WHITE. "" . $this->getLevel($player) . C::DARK_GRAY. "] ". C::WHITE . $player->getName());
         $player->save();
     }
 
